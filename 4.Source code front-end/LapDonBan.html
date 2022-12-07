@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quản lý bán hàng</title>
+    
+    <link type="text/css" href="files/css/main.css" rel="stylesheet" />
+	<script type="text/javascript" src="files/js/jquery_min.js"></script>
+    <script type="text/javascript" src="files/js/DonNhap.js"></script>
+</head>
+
+<body>
+	<!--HEADER-->
+    <div class="header">
+    	<a href="DonNhap.html" title="Quản lý bán hàng" style="outline:none;"><h1>QUẢN LÝ BÁN HÀNG NĂM NHẠC</h1></a>
+        <div class="logout">
+            Xin chào <b>Admin</b> | <a href="index.html" title="Log out">Log out</a>
+        </div>
+        <!--NAVIGATION BAR-->
+        <ul class="navigation">
+        	<a href="DonNhap.html" title="Đơn Nhập"><li>Đơn Nhập</li></a>
+            <a href="LapDonBan.html" title="Đơn Bán" class="navigation-item-selected"><li>Đơn Bán</li></a>
+            <a href="LichSuBanHang.html" title="Lịch Sử Bán Hàng"><li>Lịch Sử Bán Hàng</li></a>
+            <a href="ThongKeKho.html" title="Thống Kê Kho"><li>Thống Kê Kho</li></a>
+            <a href="ThongKeDoanhThu.html" title="Thống Kê Doanh Thu"><li>Thống Kê Doanh Thu</li></a>
+        </ul><!--NAVIGATION BAR-->
+    </div><!--END HEADER-->
+    
+    <!--CONTENT-->
+    <div class="LapDonBan">
+        <div class="content">
+            <p class="content-title">Lập Đơn Bán</p>
+            <form name="frmThemDanhMucMoi" id="frmThemDanhMucMoi" method="post" action="#">
+                Mã Hàng:<br/>
+                <input type="text" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/>
+                Loại Hàng:<br/>
+                <select class="txt" name="cmbDanhMuc" id="cmbDanhMuc" style="width:320px;">
+                    <option value="1">Vui lòng chọn loại hàng</option>
+                    <option value="2">Ống nước</option>
+                    <option value="3">Phụ kiện</option>
+                    <option value="4">Đinh</option>
+                    <option value="5">Vít</option>
+                    <option value="6">Quạt</option>
+                    <option value="7">Bóng đèn</option>
+                </select>
+                <br/><br/>
+                Tên Hàng:<br/>
+                <input type="text" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" style="width:300px;" /><br/><br/>
+                Số lượng:<br/>
+                <input type="number" min="1" max="99999" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/>
+                Đơn giá:<br/>
+                <input type="number" min="1" max="100000000" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/>
+            </form>
+        </div><!--END CONTENT-->
+        <div class="content", id="Nhapin4khachhang">
+            <form name="frmThemDanhMucMoi" id="frmThemDanhMucMoi" method="post" action="#">
+                Tên Khách Hàng<br/>
+                <input type="text" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/>
+                Giới Tính<br/>
+                <select class="txt" name="cmbDanhMuc" id="cmbDanhMuc" style="width:320px;">
+                    <option value="1">Vui lòng nhập dữ liệu</option>
+                    <option value="2">Nữ</option>
+                    <option value="3">Nam</option>
+                </select>
+                <br/><br/>
+                Số điện thoại:<br/>
+                <input type="text" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" style="width:300px;" /><br/><br/>
+                <!-- Số Tiền Phải Trả:<br/>
+                <input type="number" min="1" max="99999" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/> -->
+                Tình Trạng Thanh Toán:<br/>
+                <select class="txt" name="cmbDanhMuc" id="cmbDanhMuc" style="width:320px;">
+                    <option value="1">Vui lòng chọn tình trạng</option>
+                    <option value="2">Đã thanh toán</option>
+                    <option value="3">Chưa thanh toán</option>
+                </select>
+            </form>
+        </div>
+        <div class="xanh">
+            <input type="submit" class="btn" name="btnThemKhachHang" id="btnNhapDuLieu" value="Thêm" />
+        </div>
+    </div>
+    <!--FOOTER-->
+    <div class="footer" style="padding-top: 1px;">
+    	<p><b>Quản Lý Bán Hàng Năm Nhạc</b></p>
+        <span style="line-height:18px;">
+            <b>Nhóm thực hiện:</b><br/>
+            Văn Phú Đạt (201121521205)<br/>
+            Bùi Lê Minh (201121521223)<br/>
+            Nguyễn Minh Trung (201121521253)<br/>
+            Nguyễn Duy Hậu (201121521211)<br/>
+            Nguyễn Ngô Diễm Quỳnh (201121521240)<br/>
+            Lê Thị  Thanh Trúc (201121521252)<br/>
+        </span>
+    </div><!--END FOOTER-->
+    
+</body>
+</html>

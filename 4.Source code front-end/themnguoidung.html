@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quản lý bán hàng</title>
+    
+    <link type="text/css" href="files/css/main.css" rel="stylesheet" />
+	<script type="text/javascript" src="files/js/jquery_min.js"></script>
+    <script type="text/javascript" src="files/js/ThongKeDoanhThu.js"></script>
+</head>
+
+<body>
+	<!--HEADER-->
+    <div class="header">
+    	<a href="DonNhap.html" title="Quản lý bán hàng" style="outline:none;"><h1>QUẢN LÝ BÁN HÀNG NĂM NHẠC</h1></a>
+        <div class="logout">
+            Xin chào <b>Admin</b> | <a href="index.html" title="Log out">Log out</a>
+        </div>
+        <!--NAVIGATION BAR-->
+        <ul class="navigation">
+        	<a href="DonNhap.html" title="Đơn Nhập"><li>Đơn Nhập</li></a>
+            <a href="LapDonBan.html" title="Đơn Bán"><li>Đơn Bán</li></a>
+            <a href="LichSuBanHang.html" title="Lịch Sử Bán Hàng"><li>Lịch Sử Bán Hàng</li></a>
+            <a href="ThongKeKho.html" title="Thống Kê Kho"><li>Thống Kê Kho</li></a>
+            <a href="ThongKeDoanhThu.html" title="Thống Kê Doanh Thu" class="navigation-item-selected"><li>Thống Kê Doanh Thu</li></a>
+        </ul><!--NAVIGATION BAR-->
+    </div><!--END HEADER-->
+    
+    <!--CONTENT-->
+    <div class="content">
+    	<p class="content-title">Thêm người dùng mới</p>
+        <form name="frmThemNguoiDungMoi" id="frmThemNguoiDungMoi" method="post" action="#">
+        	Tên truy cập:<br/>
+            <input type="text" class="txt" name="txtTenTruyCap" id="txtTenTruyCap" required style="width:300px;" /><br/><br/>
+            Mật khẩu:<br/>
+            <input type="password" class="txt" name="txtMatKhau" id="txtMatKhau" required style="width:300px;" /><br/><br/>
+            Xác nhận mật khẩu:<br/>
+            <input type="password" class="txt" name="txtXacNhanMatKhau" id="txtXacNhanMatKhau" required style="width:300px;" /><br/><br/>
+            Họ tên:<br/>
+            <input type="text" class="txt" name="txtHoTen" id="txtHoTen" required style="width:300px;" /><br/><br/>
+            Loại tài khoản:<br/>
+            <select class="txt" name="cmbLoaiTaiKhoan" id="cmbLoaiTaiKhoan" style="width:320px;">
+            	<option value="1">Customer Service</option>
+                <option value="2">Merchandise</option>
+                <option value="3">Accountant</option>
+                <option value="4">System Admin</option>
+            </select>
+            <br/><br/>
+            <input type="submit" class="btn" name="btnThemNguoiDung" id="btnThemNguoiDung" value="Thêm" />
+        </form>
+    </div><!--END CONTENT-->
+    
+    <!--FOOTER-->
+    <div class="footer">
+    	<p><b>Đồ án Lập trình ứng dụng JAVA - 12HCA2</b></p>
+        <span style="line-height:18px;">
+            <b>Nhóm thực hiện:</b><br/>
+            Nguyễn Ngọc Khánh (1241350)<br/>
+            Bùi Bá Lộc (1241363)<br/>
+            Dương Diệu Pháp (1241378)<br/>
+            Nguyễn Quốc Tuấn (1241341)
+        </span>
+    </div><!--END FOOTER-->
+    
+</body>
+</html>

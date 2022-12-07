@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quản lý bán hàng</title>
+    
+    <link type="text/css" href="files/css/main.css" rel="stylesheet" />
+	<script type="text/javascript" src="files/js/jquery_min.js"></script>
+    <script type="text/javascript" src="files/js/ThongKeDoanhThu.js"></script>
+</head>
+
+<body>
+	<!--HEADER-->
+    <div class="header">
+    	<a href="DonNhap.html" title="Quản lý bán hàng" style="outline:none;"><h1>QUẢN LÝ BÁN HÀNG NĂM NHẠC</h1></a>
+        <div class="logout">
+            Xin chào <b>Admin</b> | <a href="index.html" title="Log out">Log out</a>
+        </div>
+        <!--NAVIGATION BAR-->
+        <ul class="navigation">
+        	<a href="DonNhap.html" title="Đơn Nhập"><li>Đơn Nhập</li></a>
+            <a href="LapDonBan.html" title="Đơn Bán"><li>Đơn Bán</li></a>
+            <a href="LichSuBanHang.html" title="Lịch Sử Bán Hàng"><li>Lịch Sử Bán Hàng</li></a>
+            <a href="ThongKeKho.html" title="Thống Kê Kho"><li>Thống Kê Kho</li></a>
+            <a href="ThongKeDoanhThu.html" title="Thống Kê Doanh Thu" class="navigation-item-selected"><li>Thống Kê Doanh Thu</li></a>
+        </ul><!--NAVIGATION BAR-->
+    </div><!--END HEADER-->
+    
+    <!--CONTENT-->
+    <div class="content">
+    	<span class="ketquatimkiem"></span>
+        
+    	<!--TIM KIEM-->
+    	<form class="timkiem" name="frmTimKiem" id="frmTimKiem" method="post">
+        	<input type="search" class="txt" name="txtSearch" id="txtSearch" placeholder="Nhập từ khoá cần tìm" style="width: 250px;" />
+        </form><!--END TIM KIEM-->
+    	
+        <!--DANH SACH-->
+        <div class="danhsach">
+        	<ul class="danhsach-header">
+                <li style="width:110px;">Thời gian</li>
+                <li style="width:250px;">Tổng tiền bán hàng</li>
+                <li style="width:200px;">Tổng tiền nhập hàng</li>
+                <li style="width:200px;">Tổng doanh thu</li>
+                <li style="width:80px; text-align:center;">Ghi chú</li>
+            </ul>
+            <div class="danhsach-chitiet">                
+                <ul class="danhsach-item">
+                    <li style="width:110px;">10/11/2022</li>
+                    <li style="width:250px;">10.000.000</li>
+                    <li style="width:200px;">8.000.000</li>
+                    <li style="width:200px;">50.000.000</li>
+                    <li style="width:80px; text-align:center;">
+                       
+                    </li>
+                    <li style="width:100px; float:right; text-align:right;">
+                        <a class="lnkSua" name="btnSua2" id="btnSua2" data-id="1" data-trangthai="0" title="Sửa người dùng" href="themnguoidung.html">Sửa</a>
+                        <a class="lnkXoa" name="btnXoa2" id="btnXoa2" data-id="1" title="Xoá người dùng">Xoá</a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--END DANH SACH-->
+        <div class="danhsach-navigation">
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">< Trang cũ</a>
+            <label id="lblTrang">4/5 trang</label>
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">Trang kế ></a>
+        </div>
+    </div><!--END CONTENT-->
+    
+    <!--FOOTER-->
+    <div class="footer">
+    	<p><b>Quản Lý Bán Hàng Năm Nhạc</b></p>
+        <span style="line-height:18px;">
+            <b>Nhóm thực hiện:</b><br/>
+            Văn Phú Đạt (201121521205)<br/>
+            Bùi Lê Minh (201121521223)<br/>
+            Nguyễn Minh Trung (201121521253)<br/>
+            Nguyễn Duy Hậu (201121521211)<br/>
+            Nguyễn Ngô Diễm Quỳnh (201121521240)<br/>
+            Lê Thị Thanh Trúc (201121521252)<br/>
+        </span>
+    </div><!--END FOOTER-->
+    
+</body>
+</html>
