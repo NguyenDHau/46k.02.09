@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quản lý bán hàng</title>
+    
+    <link type="text/css" href="files/css/main.css" rel="stylesheet" />
+	<script type="text/javascript" src="files/js/jquery_min.js"></script>
+    <script type="text/javascript" src="files/js/LichSuBanHang.js"></script>
+</head>
+
+<body>
+	<!--HEADER-->
+    <div class="header">
+    	<a href="DonNhap.html" title="Quản lý bán hàng" style="outline:none;"><h1>QUẢN LÝ BÁN HÀNG NĂM NHẠC</h1></a>
+        <div class="logout">
+            Xin chào <b>Admin</b> | <a href="index.html" title="Log out">Log out</a>
+        </div>
+        <!--NAVIGATION BAR-->
+        <ul class="navigation">
+        	<a href="DonNhap.html" title="Đơn Nhập"><li>Đơn Nhập</li></a>
+            <a href="LapDonBan.html" title="Đơn Bán"><li>Đơn Bán</li></a>
+            <a href="LichSuBanHang.html" title="Lịch Sử Bán Hàng" class="navigation-item-selected"><li>Lịch Sử Bán Hàng</li></a>
+            <a href="ThongKeKho.html" title="Thống Kê Kho"><li>Thống Kê Kho</li></a>
+            <a href="ThongKeDoanhThu.html" title="Thống Kê Doanh Thu"><li>Thống Kê Doanh Thu</li></a>
+        </ul><!--NAVIGATION BAR-->
+    </div><!--END HEADER-->
+    
+    <!--CONTENT-->
+    <div class="content">
+    	<span class="ketquatimkiem"></span>
+            <!--DANH SACH-->
+            <div class="danhsach">
+                <ul class="danhsach-header">
+                    <li style="width:60px;">ID</li>
+                    <li style="width:220px;">Khách hàng</li>
+                    <li style="width:150px;">SĐT</li>
+                    <li style="width:180px;">Ngày thanh toán</li>
+                    <li style="width:180px;">Tổng tiền</li>
+                    <li style="width:200px;">Trạng thái</li>
+                    <li style="width:100px; float:right; text-align:right;">
+                    </li>
+                </ul>
+                <div class="danhsach-chitiet">                
+                    <ul class="danhsach-item">
+                        <li style="width:60px;">00001</li>
+                        <li style="width:190px;">Bùi Bá Lộc</li>
+                        <li style="width:200px;">1234567890</li>
+                        <li style="width:160px;">23/10/2022</li>
+                        <li style="width:180px;">1.455.000</li>
+                        <li style="width:200px;">Đã thanh toán</li>
+                        <li style="width:100px; float:right; text-align:right;">
+                            <a class="lnkSua lnkChiTiet" name="btnChiTiet1" id="btnChiTiet1" data-id="1" data-trangthai="0" title="Xem chi tiết" href="#">Chi tiết</a>
+                        </li>
+                    </ul>
+                    <div class="danhsach-subitem" id="chiTietDonHang1">
+                        <ul class="danhsach-subitem-header">
+                            <li style="width:150px;">Mã đơn bán</li>
+                            <li style="width:170px;">Tên hàng</li>
+                            <li style="width:100px;">Số lượng</li>
+                            <li style="width:130px;">Đơn giá</li>
+                            <li style="width:200px;">Tổng tiền</li>
+                        </ul>
+                        <ul class="danhsach-subitem-item">
+                            <li style="width:150px;">00001</li>
+                            <li style="width:170px;">Quạt</li>
+                            <li style="width:100px;">6</li>
+                            <li style="width:130px;">200.000</li>
+                            <li style="width:200px;">1.200.000</li>
+                        </ul>
+                        <ul class="danhsach-subitem-item">
+                            <li style="width:150px;">00002</li>
+                            <li style="width:170px;">Đèn pin</li>
+                            <li style="width:100px;">2</li>
+                            <li style="width:130px;">55.000</li>
+                            <li style="width:200px;">110.000</li>
+                        </ul>
+                        <ul class="danhsach-subitem-item">
+                            <li style="width:150px;">00003</li>
+                            <li style="width:170px;">Sơn</li>
+                            <li style="width:100px;">1</li>
+                            <li style="width:130px;">145.000</li>
+                            <li style="width:200px;">145.000</li>
+                        </ul>
+                    </div>
+                    
+                    <ul class="danhsach-item">
+                        <li style="width:60px;">00002</li>
+                        <li style="width:190px;">Nguyễn Minh trung</li>
+                        <li style="width:200px;">0686810010</li>
+                        <li style="width:160px;">01/10/2022</li>
+                        <li style="width:180px;">1.000.000</li>
+                        <li style="width:200px;">Đã thanh toán</li>
+                        <li style="width:100px; float:right; text-align:right;">
+                            <a class="lnkSua lnkChiTiet" name="btnChiTiet2" id="btnChiTiet2" data-id="2" data-trangthai="0" title="Xem chi tiết" href="#">Chi tiết</a>
+                        </li>
+                    </ul>
+                    <div class="danhsach-subitem" id="chiTietDonHang2">
+                        <ul class="danhsach-subitem-header">
+                            <li style="width:150px;">Mã đơn bán</li>
+                            <li style="width:170px;">Tên hàng</li>
+                            <li style="width:100px;">Số lượng</li>
+                            <li style="width:130px;">Đơn giá</li>
+                            <li style="width:200px;">Tổng tiền</li>
+                        </ul>
+                        <ul class="danhsach-subitem-item">
+                            <li style="width:150px;">00001</li>
+                            <li style="width:170px;">Lưới sắt</li>
+                            <li style="width:100px;">10</li>
+                            <li style="width:130px;">50.000</li>
+                            <li style="width:200px;">500.000</li>
+                        </ul>
+                        <ul class="danhsach-subitem-item">
+                            <li style="width:150px;">00002</li>
+                            <li style="width:170px;">Bạt</li>
+                            <li style="width:100px;">2</li>
+                            <li style="width:130px;">100.000</li>
+                            <li style="width:200px;">200.000</li>
+                        </ul>
+                        <ul class="danhsach-subitem-item">
+                            <li style="width:150px;">00003</li>
+                            <li style="width:170px;">Máy nước nóng</li>
+                            <li style="width:100px;">1</li>
+                            <li style="width:130px;">300.000</li>
+                            <li style="width:200px;">300.000</li>
+                        </ul>
+                    </div>
+                    
+                    <ul class="danhsach-item">
+                        <li style="width:60px;">00003</li>
+                        <li style="width:190px;">Nguyễn Duy Hậu</li>
+                        <li style="width:200px;">0234567893</li>
+                        <li style="width:160px;">23/10/2022</li>
+                        <li style="width:180px;">6.050.000</li>
+                        <li style="width:200px;">Đã thanh toán</li>
+                        <li style="width:100px; float:right; text-align:right;">
+                            <a class="lnkSua lnkChiTiet" name="btnChiTiet3" id="btnChiTiet3" data-id="3" data-trangthai="0" title="Xem chi tiết" href="#">Chi tiết</a>
+                        </li>
+                    </ul>
+                    <div class="danhsach-subitem" id="chiTietDonHang3">
+                        <ul class="danhsach-subitem-header">
+                            <li style="width:150px;">Mã đơn bán</li>
+                            <li style="width:170px;">Tên hàng</li>
+                            <li style="width:100px;">Số lượng</li>
+                            <li style="width:130px;">Đơn giá</li>
+                            <li style="width:200px;">Tổng tiền</li>
+                        </ul>
+                        <ul class="danhsach-subitem-item">
+                            <li style="width:150px;">00001</li>
+                            <li style="width:170px;">Kéo</li>
+                            <li style="width:100px;">20</li>
+                            <li style="width:130px;">50.000</li>
+                            <li style="width:200px;">1.000.000</li>
+                        </ul>
+                        <ul class="danhsach-subitem-item">
+                            <li style="width:150px;">00002</li>
+                            <li style="width:170px;">Dây thép</li>
+                            <li style="width:100px;">10</li>
+                            <li style="width:130px;">55.000</li>
+                            <li style="width:200px;">550.000</li>
+                        </ul>
+                        <ul class="danhsach-subitem-item">
+                            <li style="width:150px;">00003</li>
+                            <li style="width:170px;">xẻng</li>
+                            <li style="width:100px;">5</li>
+                            <li style="width:130px;">100.000</li>
+                            <li style="width:200px;">500.000</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div><!--END DANH SACH-->
+        <div class="danhsach-navigation">
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">< Trang cũ</a>
+            <label id="lblTrang">3/5 trang</label>
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">Trang kế ></a>
+        </div>
+    </div><!--END CONTENT-->
+    
+    <!--FOOTER-->
+    <div class="footer">
+    	<p><b>Quản Lý Bán Hàng Năm Nhạc</b></p>
+        <span style="line-height:18px;">
+            <b>Nhóm thực hiện:</b><br/>
+            Văn Phú Đạt (201121521205)<br/>
+            Bùi Lê Minh (201121521223)<br/>
+            Nguyễn Minh Trung (201121521253)<br/>
+            Nguyễn Duy Hậu (201121521211)<br/>
+            Nguyễn Ngô Diễm Quỳnh (201121521240)<br/>
+            Lê Thị  Thanh Trúc (201121521252)<br/>
+        </span>
+    </div><!--END FOOTER-->
+    
+</body>
+</html>

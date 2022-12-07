@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quản lý bán hàng</title>
+    
+    <link type="text/css" href="files/css/main.css" rel="stylesheet" />
+	<script type="text/javascript" src="files/js/jquery_min.js"></script>
+    <script type="text/javascript" src="files/js/DonNhap.js"></script>
+</head>
+
+<body>
+	<!--HEADER-->
+    <div class="header">
+    	<a href="DonNhap.html" title="Quản lý bán hàng" style="outline:none;"><h1>QUẢN LÝ BÁN HÀNG NĂM NHẠC</h1></a>
+        <div class="logout">
+            Xin chào <b>Admin</b> | <a href="index.html" title="Log out">Log out</a>
+        </div>
+        <!--NAVIGATION BAR-->
+        <ul class="navigation">
+        	<a href="DonNhap.html" title="Danh mục sản phẩm" class="navigation-item-selected"><li>Đơn nhập</li></a>
+            <a href="LapDonBan.html" title="Quản lý sản phẩm"><li>Đơn bán</li></a>
+            <a href="LichSuBanHang.html" title="Quản lý người dùng"><li>Lịch sử bán hàng</li></a>
+            <a href="ThongKeKho.html" title="Quản lý đơn hàng"><li>Thống kê kho</li></a>
+            <a href="ThongKeDoanhThu.html" title="Quản lý khách hàng"><li>Thống kê doanh thu</li></a>
+        </ul><!--NAVIGATION BAR-->
+    </div><!--END HEADER-->
+    <!--CONTENT-->
+    <div class="content">
+    	<!--TIM KIEM-->
+    	<form class="timkiem" name="frmTimKiem" id="frmTimKiem" method="post">
+        	<input type="search" class="txt" name="txtSearch" id="txtSearch" placeholder="Nhập từ khoá cần tìm" style="width: 250px;" />
+        </form><!--END TIM KIEM-->
+    	<div >
+            <p>Tên Nhà Cung Cấp: Nguyễn Duy Khanh</p>
+            <p>Số Điện Thoại: 0684678951</p>
+        </div>
+        <!--DANH SACH-->
+         <!--DANH SACH-->
+         <div class="danhsach">
+        	<ul class="danhsach-header">
+                <li style="width:80px;">Mã hàng</li>
+                <li style="width:110px;">Loại hàng</li>
+                <li style="width:150px;">Tên hàng</li>
+                <li style="width:90px;">Số lượng</li>
+                <li style="width:120px;">Đơn giá nhập</li>
+                <li style="width:150px;">Tên nhà cung cấp</li>
+
+                <li style="width:100px;">SĐT</li>
+        
+                <li style="width:100px; float:right; text-align:right;">
+                	<a href="themdanhmucmoi.html" name="btnThemSanPham" id="btnThemSanPham" title="Thêm sản phẩm mới">+ Thêm mới</a>
+                </li>
+            </ul>
+            <div class="danhsach-chitiet">                
+                <ul class="danhsach-item">
+                    <li style="width:80px;">00001</li>
+                    <li style="width:110px;">Bóng đèn</li>
+                    <li style="width:170px;">Bóng đèn Rạng Đông</li>
+                    <li style="width:70px;">1</li>
+                    <li style="width:120px;">55.000</li>
+                    <li style="width:150px;">Bùi Lê Minh</li>
+                    <li style="width:130px;">374568903</li>
+
+                    <li style="width:100px; float:right; text-align:right;">
+                        <a class="lnkSua" name="btnSua1" id="btnSua1" data-id="1" data-trangthai="0" title="Sửa sản phẩm" href="LapDonBan.html">Sửa</a>
+                        <a class="lnkXoa" name="btnXoa1" id="btnXoa1" data-id="1" title="Xoá sản phẩm">Xoá</a>
+                    </li>
+                </ul>
+                <ul class="danhsach-item">
+                    <li style="width:80px;">00002</li>
+                    <li style="width:110px;">Ống nhựa</li>
+                    <li style="width:170px;">Ống nhựa Bình Minh 49</li>
+                    <li style="width:70px;">1</li>
+                    <li style="width:120px;">100.000</li>
+                    <li style="width:150px;">Nguyễn Duy Hậu</li>
+                    <li style="width:130px;">0374568903</li>
+                    <li style="width:100px; float:right; text-align:right;">
+                        <a class="lnkSua" name="btnSua2" id="btnSua2" data-id="2" data-trangthai="0" title="Sửa sản phẩm" href="LapDonBan.html">Sửa</a>
+                        <a class="lnkXoa" name="btnXoa2" id="btnXoa2" data-id="2" title="Xoá sản phẩm">Xoá</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div><!--END DANH SACH-->
+        <div class="danhsach-navigation">
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">< Trang cũ</a>
+            <label id="lblTrang">1/5 trang</label>
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">Trang kế ></a>
+        </div>
+        <div id="khoangcach" style="height: 80px">   </div>
+    <div class="footer" style="width:100%;">
+    	<p><b>Quản Lý Bán Hàng Năm Nhạc</b></p>
+        <span style="line-height:18px;">
+            <b>Nhóm thực hiện:</b><br/>
+            Văn Phú Đạt (201121521205)<br/>
+            Bùi Lê Minh (201121521223)<br/>
+            Nguyễn Minh Trung (201121521253)<br/>
+            Nguyễn Duy Hậu (201121521211)<br/>
+            Nguyễn Ngô Diễm Quỳnh (201121521240)<br/>
+            Lê Thị  Thanh Trúc (201121521252)<br/>
+        </span>
+    </div><!--END FOOTER-->
+    
+</body>
+</html>
